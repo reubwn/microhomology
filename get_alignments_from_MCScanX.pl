@@ -131,7 +131,7 @@ if ($proteinfile && $cdsfile) {
     if (system ("clustalo --infile=temp.faa --outfile=temp.aln --force --threads=$threads") != 0) { die "[ERROR] Problem with clustalo!\n"; }
 
     ## fetch alignment, backtranslate to nucleotides & write
-    my $get_prot_aln = Bio::AlignIO -> new(-file=>"temp.faa", -format=>"fasta");
+    my $get_prot_aln = Bio::AlignIO -> new(-file=>"temp.aln", -format=>"fasta");
     my $prot_aln = $get_prot_aln -> next_aln();
     my $dna_aln = aa_to_dna_aln($prot_aln, \%cds_seqs);
     my $write_dna_aln = Bio::AlignIO -> new(-file=>">$out.$n.fna", -format=>"fasta");
