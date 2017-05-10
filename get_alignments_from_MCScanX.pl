@@ -19,16 +19,16 @@ SYNOPSIS
   Assumes Ks values are in the final column of the collinearity file (default).
 
 OPTIONS
-  -i|--in      [FILE] : MCScanX collinearity file, annotated with Ka/Ks values
-  -p|--prot    [FILE] : fasta file of protein sequences
-  -c|--cds     [FILE] : fasta file of corresponding CDS (nucleotide)
-  -f|--fasta   [FILE] : fasta file of genome
-  -g|--gff     [FILE] : gff file of gene regions
-  -o|--out      [STR] : outfile prefix (default = 'ALN'); alignments will be written to ALN.<NUM>.fasta
-  -d|--outdir   [DIR] : dirname to save alignments (default = 'alignments')
-  -k|--minks  [FLOAT] : minimum Ks between genes (default >= 0.5)
-  -t|--threads  [INT] : number of aligner threads (default = 1)
-  -h|--help           : this message
+  -i|--in      [FILE]  : MCScanX collinearity file, annotated with Ka/Ks values
+  -p|--prot    [FILE]  : fasta file of protein sequences
+  -c|--cds     [FILE]  : fasta file of corresponding CDS (nucleotide)
+  -f|--fasta   [FILE]  : fasta file of genome
+  -g|--gff     [FILE]  : gff file of gene regions
+  -o|--out     [STR]   : outfile prefix (default = 'ALN'); alignments will be written to ALN.<NUM>.fasta
+  -d|--outdir  [DIR]   : dirname to save alignments (default = 'alignments')
+  -k|--minks   [FLOAT] : minimum Ks between genes (default >= 0.5)
+  -t|--threads [INT]   : number of aligner threads (default = 1)
+  -h|--help            : this message
 
 USAGE
   (1) To generate codon alignments for CDS using Clustal-Omega:
